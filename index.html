@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SurpriseMe AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="title-wrap">
+    <h1>SurpriseMe AI</h1>
+    <span class="subtitle">by Sav</span>
+  </div>
+
+  <!-- Prompt input and generate button -->
+  <div class="control">
+    <textarea id="prompt" placeholder="What kind of items would you like to include in the lucky draw? (e.g., names, rewards, activities)"></textarea>
+    <button onclick="generateItems()" id="generateBtn">Generate</button>
+  </div>
+
+  <!-- Hidden wheel container revealed after generating -->
+  <div id="wheelContainer" class="hidden">
+    <div class="button-group">
+      <button class="regen" onclick="generateItems()">Regenerate</button>
+      <button id="spinBtn" class="spin">Spin</button>
+    </div>
+
+    <!-- Canvas panel with arrow and wheel -->
+    <div class="canvas-panel">
+      <div class="arrow"></div>
+      <canvas id="wheelCanvas" width="500" height="500"></canvas>
+    </div>
+  </div>
+
+  <!-- Result text -->
+  <h2 id="result"></h2>
+
+  <!-- Script connection -->
+  <script src="script.js"></script>
+</body>
+</html>
