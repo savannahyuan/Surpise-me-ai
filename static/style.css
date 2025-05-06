@@ -1,1 +1,153 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #17324D;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 
+h1 {
+  margin: 30px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 50px; 
+  margin-bottom: 10px;
+}
+
+.title-wrap h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #ecf0f1;
+  font-family: 'Over the Rainbow', cursive;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 4px; /* align better with baseline */
+}
+
+.over-the-rainbow-regular {
+  font-family: "Over the Rainbow", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.control {
+  margin: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#generateBtn {
+  background-color: #F06B67;
+  color: white;
+}
+
+#generateBtn:hover {
+  background-color: #c0392b;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+button.regen {
+  background-color: #397B89;
+  color: white;
+}
+
+button.regen:hover {
+  background-color: #285761;
+}
+
+button.spin {
+  background-color: #F06B67;
+  color: white;
+}
+
+button.spin:hover {
+  background-color: #c0392b;
+}
+
+.canvas-panel {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+  border: 10px solid #dde;
+  border-radius: 50%;
+  background: #fff;
+}
+.wheel-container {
+  position: relative;
+  width: 700px;
+  height: 500px;
+}
+.arrow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg); /* Point down */
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 20px solid #F06B67;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f1c40f;
+}
